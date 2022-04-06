@@ -1,0 +1,59 @@
+
+
+pre, code {
+	background: darken($background-color, 5%);
+	border-color: darken($background-color, 20%);
+	color: desaturate($text-color, 100%);;
+}
+
+div.highlighter-rouge .highlight {
+	background: darken($background-color, 5%);
+}
+.highlight {
+	background: darken($background-color, 5%);
+}
+.site-header {
+	border-bottom-color: $grey-color-dark;
+}
+.site-title {
+	&,
+	&:visited {
+		color: $grey-color-light;
+		font-family: 'Courier New', Courier, monospace;
+		.site-title-deemph {
+			color: $grey-color;
+		}
+	}
+}
+.footer-col-wrapper {
+	color: $grey-color-light;
+}
+.site-footer {
+	border-top: 1px solid $grey-color-dark;
+}
+.menu-icon > svg, .svg-icon {
+	fill: $grey-color-light;
+}
+
+.footnotes {
+	@include relative-font-size(0.9);
+}
+
+video {
+	max-width: 100%;
+}
+
+.post-link, .post-title {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.post-categories, .post-tags {
+	font-size: $small-font-size;
+	color: $grey-color;
+}
+.img-v-size-limit {
+	max-height: 60vh;
+}
+figcaption {
+	font-style: italic;
+}
