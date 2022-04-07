@@ -32,4 +32,26 @@
 
   </div>
 
+
+  <script>
+    self._ga = {
+      data: {
+        v: "1",
+        tid: "G-ZJ1XM8F3ZY",
+        cid: `${Date.now()}${Math.random()}`,
+        dl: location.href,
+        aip: 1,
+      },
+      send(additionalParams) {
+        navigator.sendBeacon(
+          "https://google-analytics.com/collect",
+          new URLSearchParams({
+            ...this.data,
+            ...additionalParams,
+          }).toString()
+        );
+      },
+    };
+    _ga.send({ en: "page_view" });
+  </script>
 </footer>
