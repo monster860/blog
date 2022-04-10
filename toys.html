@@ -1,0 +1,19 @@
+---
+layout: page
+title: Toys
+permalink: /toys/
+add_to_header: true
+---
+<ul class="post-list">
+  {%- for page in site.pages -%}
+  {% if page.is_toy %}
+  <li>
+    <h3>
+      <a class="post-link" href="{{ page.url | relative_url }}">
+        {{ page.title | escape }}
+      </a>
+    </h3>
+  </li>
+  {%- endif -%}
+  {%- endfor -%}
+</ul>

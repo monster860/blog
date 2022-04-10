@@ -1,0 +1,24 @@
+<div class="em-sim-root">
+  <noscript>Please enable javascript to view this</noscript>
+  <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div>
+    <label>
+      Accelerating voltage
+      <div>
+        <input type="range" min="100" max="500" step="10" value="200" class="em-sim-accel-voltage">
+        <span class="em-sim-accel-voltage-value">200 V</span>
+      </div>
+    </label>
+    <label>
+      Field Strength
+      <div>
+        <input type="range" min="-0.002" max="0.002" step="any" value="-0.00040" class="em-sim-strength">
+        <span class="em-sim-strength-value">-0.00040 T</span>
+      </div>
+    </label>
+    <div>
+      Path Diameter: <span class="em-sim-diameter"></span> cm
+    </div>
+  </div>
+  <script src="{{ '/assets/em-sim.js' | relative_url }}" type="module"></script>
+</div>
